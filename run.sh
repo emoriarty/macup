@@ -55,6 +55,7 @@ brew upgrade
 # Install packages
 echo "Installing packages..."
 install_package "${SYSTEM_UTILS[@]}"
+install_package "${DEV_TOOLS[@]}"
 
 # Clean up Homebrew
 echo "Cleaning up Homebrew..."
