@@ -58,7 +58,3 @@ install_package "${SYSTEM_UTILS[@]}"
 # Clean up Homebrew
 echo "Cleaning up Homebrew..."
 brew cleanup
-
-# Check for outdated packages
-echo "Checking for outdated packages..."
-brew outdated
