@@ -24,10 +24,11 @@ fi
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
   cd "$REPO_NAME"
-  stow zshrc
+  stow zsh
   stow nvim
   stow tmux
   stow editorconfig
+  stow starship
 else
   echo "Failed to clone the repository."
   exit 1
