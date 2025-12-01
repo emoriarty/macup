@@ -57,6 +57,11 @@ echo "Installing packages..."
 install_package "${SYSTEM_UTILS[@]}"
 install_package "${DEV_TOOLS[@]}"
 
+# Install cask packages
+echo "Installing cask packages..."
+install_cask "${SYSTEM_UTILS_CASK[@]}"
+install_cask "${DEV_TOOLS_CASK[@]}"
+
 # Clean up Homebrew
 echo "Cleaning up Homebrew..."
 brew cleanup
